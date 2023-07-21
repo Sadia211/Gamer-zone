@@ -1,0 +1,376 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;700;800&display=swap');
+/***********************nav section************************/
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-top: 20px;
+}
+.logo{display: flex;
+margin-right: 10px;}
+
+.logoimg{margin-top: 25px;
+margin-right: 10px;}
+
+.logotext>p>span{ color:rgb(243, 84, 169);}
+
+.navtext{display: flex;}
+.navtext>p{margin-right: 30px;}
+
+.logotext{color: black;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 800;
+font-size: 1.5em;}
+
+.follow{ background-color: #d6d5d5;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 15px;
+padding-bottom: 15px;
+border-radius: 10px;}
+
+ /**css for the icons on nav*/
+     .navtext i{
+     font-size: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+.aboutus,.dev{padding: 20px;}
+/********************************************************/
+
+/*********banner section**************************************/
+.onlybanner{display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+
+.bannerimg{
+    background-image: url("./images/Group 14.png") ;
+    background-repeat: no-repeat;
+    height: 100%;
+    width:100%;
+    padding-bottom:300px;
+}
+.bannerimg h2{
+padding-left: 70px;
+padding-bottom: 0px;
+background-clip: text;
+ 
+
+}
+/**css for the linear gradient in the "gamer" text**/
+.bannerimg>h1{
+    font-weight:bold;
+font-size: 45px;
+    font-family: 'Work Sans', sans-serif; 
+    font-weight: 800;
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    background-image: linear-gradient(to top,#F948B2,#8D54EC);
+     padding-left: 70px;
+    
+}
+ .bannerimg>p{padding-left: 70px;}
+
+ .buttons{ 
+    display: flex;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color:white;
+    border:none;
+    padding: 10px;
+
+ }
+
+ .signin{
+    color: #ffffff;
+    background-color: #f052b1;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+ }
+ .gorogue{
+    color: #ffffff;
+    background-color:#4EC5F7;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+ }
+
+/**************unleash gamer section.below banner section***************/
+ .unleashthegamer{display: flex;
+justify-content:space-around;
+align-items: center;
+margin-bottom: 100px;
+}
+
+.unleashthegamer img{max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.imgleft{
+    margin-right: 300px;
+    padding:300px;
+}
+.Wearegamer h2{
+    margin-right: 10px;
+    text-align: right;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+.textright p{
+    margin-right: 10px;
+    text-align: right;
+    color: #534C64;
+    font-size: 18;
+    font-weight: lighter;
+    
+}
+.buttons2{ 
+margin-left: 250px;
+    border-radius: 10px;
+    color:white;
+    border:none;
+    padding: 10px;
+
+ }
+
+.knowmore{ 
+    color: #ffffff;
+    background-color: #f052b1;
+    border: none;
+    padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.purpose p{font-family: 'Work Sans', sans-serif;
+    
+font-weight: 400;
+font-size: 32;
+margin-right: 10px;}
+
+
+.untext{font-family: 'Work Sans', sans-serif;
+    font-size: 32;
+font-weight:700;
+text-align: right;
+margin-right: 10px;
+}
+
+/***********************************************/
+
+/***********************************Online games section***********/
+.onlinegames{display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;}
+
+ .onlinegames h3{ font-family: Arial, Helvetica, sans-serif;
+    font-weight:800;
+}
+.onlinegames h3 span { color: #c645d2;}
+
+.gamescard img {
+     max-width: 100%; 
+    display:block;
+}
+
+
+.games {margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+justify-content:space-around;
+align-items: center;
+
+}
+.img1,.img2,.img3,.img4{
+    cursor: pointer;
+position: relative;
+margin-right: 10px;
+
+}
+/* while hovering on img3 a play icon should appear and make the image dark*/
+.img3::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(57, 3, 34, 0.225);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.img3::after {
+    content: "\f144"; 
+    font-family: "Font Awesome 5 Free"; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 45px;
+    color: #fff;
+    opacity: 0;
+    
+}
+
+
+.img3:hover::before,
+.img3:hover::after {
+    opacity:2;
+}
+/************************************************************************/
+
+/******************************play instantly section*********/
+.Play{display: flex;
+justify-content: space-around;
+align-items: center;}
+
+.text{margin-left: 90px;}
+
+.text h1 span{ 
+color:#f052b1;
+font-weight: bolder;
+font-size: 1.5em;
+font-family: Arial, Helvetica, sans-serif;}
+
+
+.text h1{
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;}
+
+/*****css to put one image inside another*********/
+.Playonilneimgs img{position: relative;
+    z-index:-10;
+    transform:scale(0.55);}
+
+.inner img {
+top: -400px;
+left:-28px;
+transform: scale(0.60);}
+/******************************************************************/
+
+/************************************icons section with gamesname****************/
+    .icons{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-color:#fde4f3;
+        display: flex;
+        flex-wrap: wrap;
+        
+        justify-content: space-around;
+        padding-right: 80px;
+        padding-left: 80px;
+}
+     
+.icon1{display: flex;
+    justify-content:space-around;
+margin-top: 10px; 
+background-color: #ffffff;
+font-family: Arial, Helvetica, sans-serif;
+font-size: smaller;
+font-weight:bold;
+width:210px;
+border: 1px solid white ;
+border-radius: 30px;  
+}
+
+
+.icon1:hover{ cursor: pointer;
+    border:2px solid#F948B2;
+}
+
+/****************************************************************/
+
+
+/*********************************footer section*************************/
+footer{background-color: rgb(18, 2, 32);}
+
+
+.foottext{display: flex;
+justify-content: space-around;
+align-items: center;
+margin-left: 200px;
+margin-right: 200px;}
+
+
+.logo2{display: flex;
+    justify-content: center;
+    margin-right: 10px;}
+    
+    
+.logoimg2{
+margin-top: 25px;
+margin-right: 10px;}
+    
+ .logotext2>p>span{ color:rgb(243, 84, 169); }
+    
+  
+.logotext2{color:white;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 800;
+ font-size: 1.5em;}
+
+ .social-media{display: flex;
+    justify-content: space-around;
+    margin-left: 250px;
+    margin-right: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;}
+    /****making the icons white color****/
+       .social-media a{
+        color: #fff;
+    }
+
+.foottext{color: #ffffff;}
+
+.bottomtext{color: #a2a0a0;
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-right: 200px;
+margin-left: 200px;}
+
+.bottomtext p{text-align: center;}
+
+.address{color: #a2a0a0;
+text-align: center;
+padding: 30px;
+padding-bottom: 50px;}
+
+
+
+/******************************************************************/
+
+/**************************responsive mobile*****************************/
+   @media screen and (max-width:576px) {
+    
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+    .navtext{flex-direction: column;}
+.onlybanner{flex-direction: column;}
+.unleashthegamer{flex-direction: column;
+justify-content: center;}
+.games{flex-direction: column;}
+.Play{flex-direction: column;}
+
+
+
+}
+
